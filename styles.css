@@ -1,4 +1,4 @@
-/* Add your CSS to this file */
+
 body {
     margin: 0;
     font-size: 16px;
@@ -9,3 +9,107 @@ body {
     max-width: 960px;
     width: 100%;
 }
+header .container{
+display: block;
+
+
+}
+header .container li {
+display: inline;
+
+}
+header .container nav{
+text-align: right;
+}
+header .container  h1, li{
+font-size:18px;
+
+}
+header  h1{
+    justify-self: center;
+}
+
+.overview-hero > div{
+
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+      
+}
+
+.overview-hero-image{
+justify-self: right;
+margin-right: 20px;
+}
+.overview-hero-text{
+ padding-right: 100px;
+}
+.learn-about .container> div{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+
+}
+.learn-about .container div{
+    margin-right: 40px;
+    padding: 0px;
+}
+.testing >div{
+display:grid;
+grid-template-columns: 1fr 1fr;
+}
+.cta{
+    align-self: center;
+    justify-self: center;
+}
+.stories .container > article{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 10px;
+}
+.stories .container > article img{
+    border-radius: 50%;
+    justify-self: right;
+    margin-right: 25px;
+}
+
+.newsletter .container > form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+
+}
+.newsletter .container > p{
+   text-align: left;
+   margin-left: 250px;
+   margin-right: 250px;
+}
+.newsletter .container{
+    text-align: center;
+   
+}
+input[type="email"]{
+    height: 40px;
+    width: 270px;
+    
+}
+button[type="submit"]{
+    width: 170px;
+}
+/*.learn-about{grid-area:row2;}
+.testing{grid-area:row3;}
+.stories{grid-area:row4;}
+.newsletter{grid-area:row5;}
+footer{grid-area:footer;}
+
+.container{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-template-rows: 0.05fr 0.05fr 0.05fr 0.05fr 0.05fr 0.05fr; 
+ grid-template-areas: 
+    "header header"
+    "row2 row2"
+    "row3 row3" 
+    "row4 row4" 
+    "row5 row5" 
+    "footer footer"; 
+}*/
