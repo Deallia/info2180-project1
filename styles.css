@@ -14,11 +14,14 @@ body {
     
 }
 header .container{
-display: block;
+display: flex;
+flex-direction: row;
+gap: 300px;
 
 }
 header .container li {
 display: inline;
+
 }
 header .container nav{
 text-align: right;
@@ -26,6 +29,7 @@ text-align: right;
 }
 header .container a{
 color:#6b7280;
+margin-right: 10px;
 }
 header .container a:hover{
     color:#5A67D8;
@@ -35,33 +39,34 @@ header  h1{
     justify-self: center;
 }
 
-.overview-hero{
+.overview-hero .container{
     background-color: #E2E8F0;
+    padding: 50px 171px;
 }
 .overview-hero > div{
     display:grid;
     grid-template-columns: 1fr 2fr; 
-    padding: 50px; 
 }
 .overview-hero-image{
-justify-self: right;
-margin-right: 20px;
+    justify-self: right;
+    margin-right: 20px;
 }
 .overview-hero-text{
- padding-right: 100px;
+    padding-right: 100px;
 }
 
-.learn-about{
+.learn-about .container{
     padding: 30px;
 }
 .learn-about .container> div{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border-color: #4A5568;
+    
 }
 
 .learn-about .container div{
     margin-right: 20px;
+    
 }
 .learn-about h2{
     font-size: 24px;
@@ -71,19 +76,23 @@ margin-right: 20px;
     font-size: 21px;
     color: #48BB78;
 }
-.card{
-    border-color:green;
+.learn-about .container  .card{
+    border-style: solid;
+    border-width: 50%;
+    border-color:#E2E8F0;
     border-radius: 5px;
-    border-width: 100px;
+    box-shadow: 0 8px 8px -4px #a5a8ac;  
+    
 }
-.testing{
+.testing .container{
     background-color: #4A5568;
     color: white;
+    padding: 100px 171px;
 }
 .testing >div{
-display:grid;
-grid-template-columns: 1fr 1fr;
-padding: 100px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    
 }
 .cta{
     align-self: center;
@@ -97,7 +106,7 @@ padding: 100px;
     color:white;
     text-decoration: none;
 }
-.stories{
+.stories .container{
     padding: 60px;
 }
 .stories .container > article{
@@ -115,8 +124,9 @@ padding: 100px;
    color: #5A67D8;
    text-decoration: none;
 }
-.newsletter{
-    padding: 50px;
+.newsletter .container{
+    text-align: center;
+    padding: 50px 171px;
     background-color: #48BB78;
     color: white;
 }
@@ -132,9 +142,7 @@ padding: 100px;
    margin-left: 250px;
    margin-right: 250px;
 }
-.newsletter .container{
-    text-align: center;
-}
+
 input[type="email"]{
     height: 40px;
     width: 270px;
@@ -150,8 +158,9 @@ button[type="submit"]{
     border-color: #5A67D8;
 }
 
-footer{
-    padding: 15px;
+footer .container{
+
+    padding: 15px 171px;
     color:white;
     background-color: #4A5568;
 }
